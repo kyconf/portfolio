@@ -15,6 +15,10 @@ if (entry.isIntersecting) {
   void animatedBox.offsetWidth; 
   animatedBox.classList.add('sectText');
 } else {
+  var animated = document.getElementById('titleText');
+  animated.classList.remove('titleText');
+  void animated.offsetWidth; 
+  animated.classList.add('titleText');
   entry.target.classList.remove('change')
   document.body.classList.remove('change');
   
@@ -68,3 +72,4 @@ animatedText.classList.remove('titleText');
         animatedText.classList.add('titleText');
         
   */
+    
