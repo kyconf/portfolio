@@ -1,0 +1,126 @@
+body {
+opacity: 1;
+animation: fadein ease-in forwards 1s;
+
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+.titleText {
+
+margin-top: 5vw;
+
+
+}
+
+.titleText span {
+    filter: blur(5px);
+    margin-left: 15vw;
+    display: inline-block;
+    opacity: 1;
+    animation: slideinLeft ease-in-out forwards 1.5s;
+  }
+
+  .sectText {
+    font-size: 15vw;
+ 
+}
+
+  .sectText span {
+    filter: blur(5px);
+    margin-right: 15vw;
+    display: inline-block;
+    opacity: 0;
+    animation: slideinRight ease-in-out forwards 1.5s;
+  }
+
+.sectText span:nth-child(1) { 
+    animation-delay: 0.6s; }
+.sectText span:nth-child(3) { 
+    animation-delay: 0.4s; }
+.sectText span:nth-child(5) { 
+    animation-delay: 0.2s; }
+
+@keyframes slideinLeft { 
+    from {
+     
+        margin-left: 15vw;
+        filter: blur(5px);
+    }
+    to {
+      
+       margin-left: 0vw;
+       filter: blur(0px);
+    }
+}
+
+
+.titleText span:nth-child(1) { 
+    animation-delay: 0.2s; }
+.titleText span:nth-child(2) { 
+    animation-delay: 0s; }
+
+@keyframes slideinRight { 
+    from {
+        opacity:0;
+        margin-right: 15vw;
+        filter: blur(5px);
+    }
+    to {
+        opacity:1;
+       margin-right: 0vw;
+       filter: blur(0px);
+    }
+}
+
+
+.buttons {
+    margin: 2vh;
+}
+
+@keyframes slideTop { 
+    from {
+        margin-top: 5vh;
+        filter: blur(3px);
+    }
+    to {
+       margin-top: 0vh;
+       filter: blur(0px);
+    }
+}
+
+
+@keyframes scrollColor {
+    from {
+        background-color: rgb(19, 17, 17);
+  
+        color: black;
+    }
+    to {
+        
+        background-color:rgb(250, 250, 234);
+        color: black;
+    }
+}
+
+
+
+@keyframes scrollColor2 {
+    from {
+      
+        background-color: rgb(250, 250, 234);
+        color: black;
+    }
+    to {
+      
+        background-color: rgb(19,19,19);
+        color: rgb(255, 255, 255);
+    }
+}
+
